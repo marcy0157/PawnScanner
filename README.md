@@ -1,10 +1,10 @@
 
 # PawnScanner
 ## Collaborators:
-https://github.com/StepsJr4
-https://github.com/Mirko1021
-https://github.com/Joghurtzz
-https://github.com/EgIx004
+- https://github.com/StepsJr4
+- https://github.com/Mirko1021
+- https://github.com/Joghurtzz
+- https://github.com/EgIx004
 ## Description
 This project provides a system for managing and consulting data related to data breaches. It consists of two main programs:
 
