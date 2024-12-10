@@ -30,8 +30,9 @@ This project provides a system for managing and consulting data related to data 
 1. Download the chosen compose file.
 
 2. Configure the files:
-   - #`composeMongo.yml`: Ensure the configurations match your local environment.
-   - #`composeNOMongo.yml`: Edit the connection data to the external MongoDB database.
+   - `composeMongo.yml`: Ensure the configurations match your local environment.
+     
+   - `composeNOMongo.yml`: Edit the connection data to the external MongoDB database.
 
 
 ---
