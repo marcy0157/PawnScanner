@@ -25,9 +25,7 @@ Questo progetto fornisce un sistema per la gestione e la consultazione di dati r
 - (Facoltativo) Un'istanza MongoDB configurata se si utilizza `composeNOMongo.yml`.
 
 ### Configurazione
-1. Clona la repo:
-   git clone <url-della-repo>
-   cd <nome-della-repo>
+1. Scaricare il file compose scelto
 
 2. Configura i file:
    - `composeMongo.yml`: Assicurati che le configurazioni corrispondano al tuo ambiente locale.
