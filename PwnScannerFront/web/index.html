@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PwnScanner</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="developer-box">
+    DEVELOPED BY: Marcello Maccagnola, Mirko Stipo,<br>Mirko Cosentino, Jacopo Verardo, Angelo Gendy
+</div>
+<div class="hero-section">
+    <div class="container">
+        <h1 class="title">PwnScanner</h1>
+        <p class="subtitle">Verifica se un'email è presente in un breach</p>
+        <!-- Form per la ricerca -->
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <form id="emailForm" class="input-group mt-4">
+                    <input type="email" class="form-control input-email" id="emailInput"
+                           placeholder="Inserisci la tua email" required>
+                    <button type="submit" class="btn btn-primary btn-search">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="results-section mt-5">
+    <h2 class="text-center results-title title">Risultati</h2>
+    <div id="results" class="results-content text-center"></div>
+</div>
+
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- App Script -->
+<script src="js/app.js"></script>
+</body>
+</html>

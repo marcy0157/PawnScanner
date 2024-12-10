@@ -1,0 +1,40 @@
+/* Form di login e upload */
+.form-login, .form-upload {
+    background-color: rgba(31, 30, 41, 0.8); /* Sfondo semitrasparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-label {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.input-email {
+    background-color: #1f1e29;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-email:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 110, 108, 0.5);
+}
+
+.btn-search {
+    height: 50px;
+    background: #ff6e6c;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-search:hover {
+    background: #ff3b3a;
+}

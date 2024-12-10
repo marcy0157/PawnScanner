@@ -1,0 +1,24 @@
+cache:
+  size_mb: 150
+  ttl_minutes: 10
+
+logging:
+  level: "info"
+
+database:
+  type: "mongodb"
+  host: "185.58.122.231"   # Sostituisci con il tuo host MongoDB
+  port: 27017              # Porta MongoDB
+  username: "domotech"     # Nome utente MongoDB
+  password: ".Pwscanner12." # Password MongoDB
+  database_name: "pwnscanner" # Nome del database
+
+#database:
+#  type: "firestore"
+#  host: "localhost" # Non richiesto per Firestore
+#  port: 27017       # Non richiesto per Firestore
+#  username: ""      # Non richiesto per Firestore
+#  password: ""      # Non richiesto per Firestore
+#  database_name: "" # Non richiesto per Firestore
+#  credentials_path: "PrivateKeyFirebase.json"
+

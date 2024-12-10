@@ -1,0 +1,68 @@
+definitions:
+  utils.ErrorResponse:
+    properties:
+      code:
+        type: integer
+      message:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /breaches:
+    get:
+      consumes:
+      - application/json
+      description: Restituisce un elenco di tutti i breach registrati nel sistema
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              type: string
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/utils.ErrorResponse'
+      summary: Ottiene tutti i breach disponibili
+      tags:
+      - Breach
+  /check-email:
+    post:
+      consumes:
+      - application/json
+      description: Cerca se un'email è presente in uno o più breach
+      parameters:
+      - description: Email da verificare
+        in: body
+        name: email
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/utils.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/utils.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/utils.ErrorResponse'
+      summary: Verifica un'email nei breach
+      tags:
+      - Email
+swagger: "2.0"
