@@ -1,0 +1,48 @@
+services:
+  pwnscanneradmin:
+    image: stepsjr/pwnscanneradmin:1.0
+    container_name: pwnscanneradmin
+    ports:
+      - "8081:8081"
+    environment:
+      ADMIN_USERNAME: [username]
+      ADMIN_PASSWORD: [password]
+      MONGODB_URI: mongodb://[usernameDB]:[passwdDB]@[IP]:[PORT]
+      MONGODB_DBNAME: [database_name]
+    networks:
+      - pwnscanner-network
+
+  pwnscanner:
+    image: marci01/pwnscanner:1.0
+    container_name: pwnscanner
+    ports:
+      - "8080:8080"
+    environment:
+      DB_TYPE: mongodb
+      DB_HOST: mongo
+      DB_PORT: 27017
+      DB_USERNAME: [db_username]
+      DB_PASSWORD: [db_password]
+      DB_NAME: [database_name]
+    networks:
+      - pwnscanner-network
+
+  mongo:
+    image: mongo:5.0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: [root_username]
+      MONGO_INITDB_ROOT_PASSWORD: [root_password]
+    networks:
+      - pwnscanner-network
+    volumes:
+      - mongo-data:/data/db
+
+networks:
+  pwnscanner-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
