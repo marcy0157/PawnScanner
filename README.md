@@ -1,67 +1,73 @@
-# PwnScanner
-## Descrizione
-Questo progetto fornisce un sistema per la gestione e la consultazione di dati relativi a data breach. È composto da due programmi principali:
+
+# PawnScanner
+## Collaborators:
+https://github.com/StepsJr4
+https://github.com/Mirko1021
+https://github.com/Joghurtzz
+https://github.com/EgIx004
+## Description
+This project provides a system for managing and consulting data related to data breaches. It consists of two main programs:
 
 1. **PwnScanner**: 
-   - Un'interfaccia frontend che consente agli utenti di verificare se un'email è stata coinvolta in un data breach.
-   - Si connette a un database MongoDB per interrogare i dati.
-   - Mostra dove è stato rilevato il breach (es. Facebook, Twitter, ecc.).
+   - A frontend interface that allows users to check if an email has been involved in a data breach.
+   - Connects to a MongoDB database to query data.
+   - Displays where the breach occurred (e.g., Facebook, Twitter, etc.).
 
 2. **PwnAdmin**:
-   - Un tool di amministrazione che consente di caricare i file dei data breach nel database MongoDB.
-   - Utile per la manutenzione e l'aggiornamento dei dati.
+   - An administration tool that allows uploading data breach files into the MongoDB database.
+   - Useful for maintaining and updating data.
 
 ---
 
-## Struttura del Progetto
+## Project Structure
 
 ![](?raw=true)
 ---
 
-## Come usare il progetto
+## How to Use the Project
 
-### Prerequisiti
-- Docker e Docker Compose installati.
-- (Facoltativo) Un'istanza MongoDB configurata se si utilizza `composeNOMongo.yml`.
+### Prerequisites
+- Docker and Docker Compose installed.
+- (Optional) A configured MongoDB instance if using `composeNOMongo.yml`.
 
-### Configurazione
-1. Scaricare il file compose scelto
+### Configuration
+1. Download the chosen compose file.
 
-2. Configura i file:
-   - `composeMongo.yml`: Assicurati che le configurazioni corrispondano al tuo ambiente locale.
-   - `composeNOMongo.yml`: Modifica i dati di connessione al database MongoDB esterno.
-   - `config.yaml`: Specifica l'URL del database MongoDB (locale o remoto).
+2. Configure the files:
+   - `composeMongo.yml`: Ensure the configurations match your local environment.
+   - `composeNOMongo.yml`: Edit the connection data to the external MongoDB database.
+   - `config.yaml`: Specify the MongoDB database URL (local or remote).
 
 ---
 
-### Avvio dei container
+### Starting the Containers
 
-#### Con MongoDB incluso
-Usa il file `composeMongo.yml`:
+#### With MongoDB included
+Use the `composeMongo.yml` file:
    docker-compose -f composeMongo.yml up
 
-#### Con MongoDB esterno
-Usa il file `composeNOMongo.yml`:
+#### With external MongoDB
+Use the `composeNOMongo.yml` file:
    docker-compose -f composeNOMongo.yml up
 
-#### Fermare i container
-Per fermare i container, usa:
+#### Stopping the Containers
+To stop the containers, use:
    docker-compose down
 
 ---
 
-## Funzionalità principali
+## Main Features
 
 ### PwnScanner (Frontend)
-- Verifica se un'email è stata coinvolta in un data breach.
-- Mostra i dettagli di ogni breach (es. servizio coinvolto).
+- Checks if an email has been involved in a data breach.
+- Displays details of each breach (e.g., the service involved).
 
 ### PwnAdmin (Admin Tool)
-- Carica file di breach nel database MongoDB.
-- Funzionalità per gestire i dati caricati.
+- Uploads breach files into the MongoDB database.
+- Features to manage uploaded data.
 
 ---
 
-## Note aggiuntive
-- **Port**: Verifica le porte esposte nei file Docker Compose e assicurati che non siano già in uso.
-- **Database**: Se utilizzi `composeNOMongo.yml`, assicurati che il database MongoDB sia correttamente configurato e accessibile.
+## Additional Notes
+- **Port**: Verify the ports exposed in the Docker Compose files and ensure they are not already in use.
+- **Database**: If using `composeNOMongo.yml`, ensure the MongoDB database is correctly configured and accessible.
