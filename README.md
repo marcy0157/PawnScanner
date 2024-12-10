@@ -31,7 +31,9 @@ This project provides a system for managing and consulting data related to data 
 
 2. Configure the files:
    - `composeMongo.yml`: Ensure the configurations match your local environment.
-     
+     ```
+     jancacn
+     ```
    - `composeNOMongo.yml`: Edit the connection data to the external MongoDB database.
 
 
