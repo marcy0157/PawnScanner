@@ -64,15 +64,6 @@ Per fermare i container, usa:
 
 ---
 
-## Schema di funzionamento
-
-+-----------+          +----------------+         +------------+
-| PwnAdmin  | -------> | MongoDB        | <------ | PwnScanner |
-| (Backend) |          | (Database)     |         | (Frontend) |
-+-----------+          +----------------+         +------------+
-
----
-
 ## Note aggiuntive
 - **Port**: Verifica le porte esposte nei file Docker Compose e assicurati che non siano già in uso.
 - **Database**: Se utilizzi `composeNOMongo.yml`, assicurati che il database MongoDB sia correttamente configurato e accessibile.
