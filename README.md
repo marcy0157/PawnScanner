@@ -1,10 +1,6 @@
 
 # PawnScanner
-## Collaborators:
-- https://github.com/StepsJr4
-- https://github.com/Mirko1021
-- https://github.com/Joghurtzz
-- https://github.com/EgIx004
+
 ## Description
 This project provides a system for managing and consulting data related to data breaches. It consists of two main programs:
 
@@ -34,9 +30,9 @@ This project provides a system for managing and consulting data related to data 
 1. Download the chosen compose file.
 
 2. Configure the files:
-   - `composeMongo.yml`: Ensure the configurations match your local environment.
-   - `composeNOMongo.yml`: Edit the connection data to the external MongoDB database.
-   - `config.yaml`: Specify the MongoDB database URL (local or remote).
+   - #`composeMongo.yml`: Ensure the configurations match your local environment.
+   - #`composeNOMongo.yml`: Edit the connection data to the external MongoDB database.
+
 
 ---
 
@@ -71,3 +67,8 @@ To stop the containers, use:
 ## Additional Notes
 - **Port**: Verify the ports exposed in the Docker Compose files and ensure they are not already in use.
 - **Database**: If using `composeNOMongo.yml`, ensure the MongoDB database is correctly configured and accessible.
+## Collaborators:
+- https://github.com/StepsJr4
+- https://github.com/Mirko1021
+- https://github.com/Joghurtzz
+- https://github.com/EgIx004
