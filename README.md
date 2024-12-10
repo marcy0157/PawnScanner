@@ -17,7 +17,7 @@ This project provides a system for managing and consulting data related to data 
 
 ## Project Structure
 
-![](?raw=true)
+![](https://github.com/marcy0157/PawnScanner/blob/main/media/image.png?raw=true)
 ---
 
 ## How to Use the Project
